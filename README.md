@@ -17,9 +17,11 @@ make data
 
 `make data` downloads 8 files into `data/raw/`: the listings, calendar, reviews and neighbourhood map for two snapshots (2026-06-15 and 2026-09-19). It then checks each file against its checksum in `MANIFEST.sha256`:
 
-- A file that is already there and correct is skipped.
+- A file that is already there and correct is kept. Raw files are never overwritten: if one is there but wrong, it stops and tells you to delete it.
 - If Inside Airbnb no longer has a file, it downloads our copy from the [`data-v1` release](https://github.com/walidelnozahy/ds5110-final-project-occupancy/releases/tag/data-v1).
-- If a file doesn't match its checksum, it stops and says which file.
+- If a downloaded file doesn't match its checksum, it stops and says which file.
+
+Run it inside the activated `.venv`, so `python` is the project's Python.
 
 To test the backup copy on its own: `python src/download_data.py --from-release`.
 

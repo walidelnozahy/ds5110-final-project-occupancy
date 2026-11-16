@@ -4,7 +4,9 @@ Run it with `make data` (or `python src/download_data.py`).
 
 MANIFEST.sha256 is the list of files we expect, with a checksum for each.
 For every file in it, this script:
-  1. skips the file if it is already in data/raw/ and its checksum matches,
+  1. keeps the file if it is already in data/raw/ and its checksum matches,
+     and stops with an error if it is there but its checksum is wrong
+     (raw data is never overwritten),
   2. otherwise downloads it from Inside Airbnb,
   3. if that fails or the checksum is wrong, downloads our copy from the
      GitHub release instead,
@@ -80,9 +82,12 @@ def download(url, target):
 def fetch(checksum, path, from_release_only):
     """Make sure one file is in place with the right checksum. Returns an error or None."""
     target = ROOT / path
-    if target.exists() and sha256(target) == checksum:
-        print(f"ok        {path} (already downloaded)")
-        return None
+    if target.exists():
+        # Raw data is never overwritten (Module 5, fetch()). A wrong file is reported, not replaced.
+        if sha256(target) == checksum:
+            print(f"ok        {path} (already downloaded)")
+            return None
+        return f"{path}\n    is already in data/raw/ but does not match MANIFEST.sha256. Delete it and run `make data` again."
 
     target.parent.mkdir(parents=True, exist_ok=True)
     partial = target.with_name(target.name + ".part")
