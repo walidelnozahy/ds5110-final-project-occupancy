@@ -1,0 +1,12 @@
+# Data: raw files come from `make data`, derived files are rebuilt by the pipeline
+data/raw/
+data/derived/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
