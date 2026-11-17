@@ -46,7 +46,7 @@ Data from Inside Airbnb (https://insideairbnb.com), licensed under [CC BY 4.0](h
 |---|---|---|
 | Delivery lead | Walid Elnozahy | Repo skeleton, `make data`, `MANIFEST.sha256` and the data release ([PR #5](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/5)) |
 | Data lead | | |
-| Model lead | Ziang Chen|Structured and outlined the research question. Verified contribution by the delivery head. |
+| Model lead | Ziang Chen|Structured and outlined the research question. Verified contribution by the delivery head. ([PR #6](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/6)) |
 
 ## AI use
 
