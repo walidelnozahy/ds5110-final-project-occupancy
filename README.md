@@ -48,3 +48,4 @@ Data from Inside Airbnb (https://insideairbnb.com), licensed under [CC BY 4.0](h
 ## AI use
 
 - **Walid:** used Claude to help plan the milestone, write the setup code and review our work. I reviewed and tested everything.
+- **Ziang**: Used ChatGPT to clarify and explain the research question. I reviewed and wrote the whole section by hand by myself.
