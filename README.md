@@ -41,7 +41,7 @@ Data from Inside Airbnb (https://insideairbnb.com), licensed under [CC BY 4.0](h
 
 | Role (Nov 16–23) | Name | Contribution to this milestone |
 |---|---|---|
-| Delivery lead | Walid Elnozahy | Repo skeleton, `make data`, `MANIFEST.sha256` and the data release ([PR #5](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/5)) |
+| Delivery lead | Walid Elnozahy | Repo skeleton, `make data`, `MANIFEST.sha256` and the data release ([PR #5](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/5)); reviewed the data card and fixed the question format and data card details ([PR #9](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/9)) |
 | Data lead | Max Goldmuntz | Drafted the data card (`data/README.md`), including source provenance, occupancy-specific limitations, and checksum verification documentation. ([PR #8](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/8), [PR #7](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/7)) |
 | Model lead | Ziang Chen|Structured and outlined the research question. Verified contribution by the delivery head. ([PR #6](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/6)) |
 
