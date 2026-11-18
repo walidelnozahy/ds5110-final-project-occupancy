@@ -1,6 +1,13 @@
 # Boston short-term rentals: occupancy
 
-DS 5110 final project, Fall 2026, Occupancy track. We use Inside Airbnb's public Boston data to look at how booked short-term rental listings are across seasons and neighbourhoods, and how sure we can be about it.
+## Research Question
+
+**Among Boston Airbnb listings included in the June 15, 2026 snapshot, how does calendar unavailability vary across seasons and neighbourhoods, and how uncertain are these estimates?**
+
+* Target Population & Outcome Source:
+It consists of Boston listings appearing in this snapshot with valid calendar records. We measure each listing's unavailable-night proportion using the available field in calendar.csv.gz and identify neighbourhoods using neighbourhood_cleansed in listings.csv.gz. We will compare seasonal and neighbourhood-level differences and estimate uncertainty using bootstrap confidence intervals. 
+* Limitation:
+Inside Airbnb explains that unavailable dates may represent either confirmed bookings or dates blocked by hosts. Its occupancy model also relies on assumptions about guest reviews and average stays. Therefore, our analysis measures calendar unavailability rather than actual guest occupancy and cannot establish how frequently properties are truly rented.
 
 ## How to run
 
@@ -39,7 +46,7 @@ Data from Inside Airbnb (https://insideairbnb.com), licensed under [CC BY 4.0](h
 |---|---|---|
 | Delivery lead | Walid Elnozahy | Repo skeleton, `make data`, `MANIFEST.sha256` and the data release ([PR #5](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/5)) |
 | Data lead | | |
-| Model lead | | |
+| Model lead | Ziang Chen|Structured and outlined the research question. Verified contribution by the delivery head. ([PR #6](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/6)) |
 
 ## AI use
 
