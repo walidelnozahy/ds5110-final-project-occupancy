@@ -47,4 +47,4 @@ Data from Inside Airbnb (https://insideairbnb.com), licensed under [CC BY 4.0](h
 
 ## AI use
 
-- **Claude (Anthropic), in Claude Code:** helped plan the milestone, write the download script, `Makefile` and this README, and review the question and data card (checking word count and row counts). Walid reviewed and tested all of it.
+- **Walid:** used Claude to help plan the milestone, write the setup code and review our work. I reviewed and tested everything.
