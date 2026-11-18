@@ -13,6 +13,7 @@ We use two snapshots so we can develop our occupancy analysis on an earlier quar
 The files are licensed under CC BY 4.0. This requires attribution, meaning we must cite Inside Airbnb on our final project site and in the main README.
 
 ## Files
+Row counts are for the June 15 (build) snapshot.
 * **`listings.csv.gz`**: Grain is one row per listing. Contains 4,378 rows. Main use is for features, hosts, and prices.
 * **`calendar.csv.gz`**: Grain is one row per listing per date. Contains 1,611,110 rows. Main use is for availability, occupancy, and scale.
 * **`reviews.csv.gz`**: Grain is one row per review. Contains 252,910 rows. Main use is for text and activity over time.

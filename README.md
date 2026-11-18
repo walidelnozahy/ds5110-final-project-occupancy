@@ -1,13 +1,10 @@
 # Boston short-term rentals: occupancy
 
-## Research Question
+DS 5110 final project, Fall 2026, Occupancy track. We use Inside Airbnb's public Boston data to look at how booked short-term rental listings are across seasons and neighbourhoods, and how sure we can be about it.
 
-**Among Boston Airbnb listings included in the June 15, 2026 snapshot, how does calendar unavailability vary across seasons and neighbourhoods, and how uncertain are these estimates?**
+## Question
 
-* Target Population & Outcome Source:
-It consists of Boston listings appearing in this snapshot with valid calendar records. We measure each listing's unavailable-night proportion using the available field in calendar.csv.gz and identify neighbourhoods using neighbourhood_cleansed in listings.csv.gz. We will compare seasonal and neighbourhood-level differences and estimate uncertainty using bootstrap confidence intervals. 
-* Limitation:
-Inside Airbnb explains that unavailable dates may represent either confirmed bookings or dates blocked by hosts. Its occupancy model also relies on assumptions about guest reviews and average stays. Therefore, our analysis measures calendar unavailability rather than actual guest occupancy and cannot establish how frequently properties are truly rented.
+Among Boston Airbnb listings included in the June 15, 2026 snapshot, how does calendar unavailability vary across seasons and neighbourhoods, and how uncertain are these estimates? The target population consists of Boston listings appearing in this snapshot with valid calendar records. We measure each listing's unavailable-night proportion using the available field in calendar.csv.gz and identify neighbourhoods using neighbourhood_cleansed in listings.csv.gz. We will compare seasonal and neighbourhood-level differences and estimate uncertainty using bootstrap confidence intervals. Inside Airbnb explains that unavailable dates may represent either confirmed bookings or dates blocked by hosts. Therefore, our analysis measures calendar unavailability rather than actual guest occupancy and cannot establish how frequently properties are truly rented.
 
 ## How to run
 
@@ -44,10 +41,10 @@ Data from Inside Airbnb (https://insideairbnb.com), licensed under [CC BY 4.0](h
 
 | Role (Nov 16–23) | Name | Contribution to this milestone |
 |---|---|---|
-| Delivery lead | Walid Elnozahy | Repo skeleton, `make data`, `MANIFEST.sha256` and the data release ([PR #5](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/5)) |
-| Data lead | Max Goldmuntz | Drafted the data card (`data/README.md`), including source provenance, occupancy-specific limitations, and checksum verification documentation. |
+| Delivery lead | Walid Elnozahy | Repo skeleton, `make data`, `MANIFEST.sha256` and the data release ([PR #5](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/5)); reviewed the data card and fixed the question format and data card details ([PR #9](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/9)) |
+| Data lead | Max Goldmuntz | Drafted the data card (`data/README.md`), including source provenance, occupancy-specific limitations, and checksum verification documentation. ([PR #8](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/8), [PR #7](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/7)) |
 | Model lead | Ziang Chen|Structured and outlined the research question. Verified contribution by the delivery head. ([PR #6](https://github.com/walidelnozahy/ds5110-final-project-occupancy/pull/6)) |
 
 ## AI use
 
-- **Claude (Anthropic), in Claude Code:** helped plan the milestone and write the download script, `Makefile` and this README. Walid reviewed and tested all of it.
+- **Claude (Anthropic), in Claude Code:** helped plan the milestone, write the download script, `Makefile` and this README, and review the question and data card (checking word count and row counts). Walid reviewed and tested all of it.
